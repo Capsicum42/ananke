@@ -17,3 +17,8 @@ pre {
   hyphens: none;
   position: relative;
 }
+
+p code {
+
+  font-size: 0.9em;
+  }
