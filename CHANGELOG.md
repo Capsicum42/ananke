@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.17.1](https://github.com/gohugo-ananke/ananke/compare/v2.17.0...v2.17.1) (2026-06-06)
+
+### Bug Fixes
+
+* apply configured social colours on hover for follow and share ([#861](https://github.com/gohugo-ananke/ananke/issues/861)) ([#979](https://github.com/gohugo-ananke/ananke/issues/979)) ([237551f](https://github.com/gohugo-ananke/ananke/commit/237551fcb68055aa8344e83b1d31773fe7c2e653))
+* test local working tree in quickstart test ([#938](https://github.com/gohugo-ananke/ananke/issues/938)) ([#978](https://github.com/gohugo-ananke/ananke/issues/978)) ([d545fdf](https://github.com/gohugo-ananke/ananke/commit/d545fdff144cebdd9358b1b14c0c168b03a7fd0b))
+
+### Build
+
+* **deps-dev:** bump @biomejs/biome from 2.4.15 to 2.4.16 ([#977](https://github.com/gohugo-ananke/ananke/issues/977)) ([ccbcc32](https://github.com/gohugo-ananke/ananke/commit/ccbcc324c3bc396cc2f4d608c1b4c0db22bbe112))
+* **deps-dev:** bump @types/node from 25.8.0 to 25.9.1 ([#976](https://github.com/gohugo-ananke/ananke/issues/976)) ([8743905](https://github.com/gohugo-ananke/ananke/commit/87439054b061727f957b489db9e74ceb37f8c524))
+* **deps-dev:** bump lint-staged from 17.0.4 to 17.0.5 ([#975](https://github.com/gohugo-ananke/ananke/issues/975)) ([447ede2](https://github.com/gohugo-ananke/ananke/commit/447ede2ada00932a707179bcaaa59763696ce0e2))
+* **deps:** bump postcss from 8.5.14 to 8.5.15 ([#974](https://github.com/gohugo-ananke/ananke/issues/974)) ([7cd8756](https://github.com/gohugo-ananke/ananke/commit/7cd8756d3846ea90447aae85ee02de8698dec655))
+
+### Chores
+
+* update gitignore ([#981](https://github.com/gohugo-ananke/ananke/issues/981)) ([24426cb](https://github.com/gohugo-ananke/ananke/commit/24426cbd2549b7fc7d6ca8b2fea98edf348bd78b))
+
 ## [2.17.0](https://github.com/gohugo-ananke/ananke/compare/v2.16.0...v2.17.0) (2026-05-17)
 
 ### Features
