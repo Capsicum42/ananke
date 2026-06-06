@@ -1,19 +1,26 @@
+---
+agent: agent
+description: This prompt is used to select, analyse, and fix or triage one GitHub issue from the Ananke repository, including related documentation updates where appropriate.
+---
+
+# Analyse and fix or triage an Ananke issue
+
 You are working on the `gohugo-ananke/ananke` GitHub repository.
 
 Goal: select, analyse, and fix or triage one GitHub issue from Ananke, including related documentation updates where appropriate.
 
-Input handling:
+## Input handling
 
 * If the user provides an issue ID, use that specific issue: `https://github.com/gohugo-ananke/ananke/issues/$ID`
-* If the user does not provide an issue ID, inspect the open issues at `https://github.com/gohugo-ananke/ananke/issues` and choose one suitable issue to work on.
+* If the user does not provide an issue ID, inspect the open issues at `https://github.com/gohugo-ananke/ananke/issues?q=%20is%3Aissue%20is%3Aopen%20label%3Astatus%3Arecheck%20sort%3Acreated-asc` and choose one suitable issue to work on. Prefer older issues to newer issues.
 * Wherever an instruction contains `$ID`, replace `$ID` with the actual selected issue number.
 
-Repositories:
+## Repositories
 
 * Theme repository: `https://github.com/gohugo-ananke/ananke`
 * Documentation repository: `https://github.com/gohugo-ananke/documentation`
 
-Required actions:
+## Required actions
 
 1. Check the issue list or the specific issue URL.
 2. Select the issue:
@@ -67,14 +74,14 @@ Required actions:
     * Any assumptions made.
     * Any verification performed.
 
-Clarification rule:
+## Clarification rule
 
 * If required information is missing and cannot be inferred safely, ask for clarification before making repository changes.
 * If the issue is ambiguous but still triageable, state the ambiguity and propose the safest next action.
 * Do not invent repository structure, implementation details, documentation structure, test results, or maintainer intent.
 * Do not make documentation changes without first checking the documentation repository's existing structure, voice, and contribution instructions.
 
-Output format:
+## Output format
 
 1. `Selected issue`
 2. `Issue summary`
@@ -85,7 +92,7 @@ Output format:
 7. `Verification`
 8. `Notes or blockers`
 
-Behaviour requirements:
+## Behaviour requirements
 
 * Be precise and evidence-based.
 * Prefer small, reviewable changes.
