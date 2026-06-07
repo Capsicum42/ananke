@@ -17,7 +17,7 @@ updates:
       semver-patch-days: 4
     assignees:
       - davidsneighbour
-    target-branch: maintenance
+    target-branch: development
     open-pull-requests-limit: 999
     pull-request-branch-name:
       separator: /
@@ -38,7 +38,7 @@ updates:
       semver-patch-days: 4
     assignees:
       - davidsneighbour
-    target-branch: maintenance
+    target-branch: development
     open-pull-requests-limit: 999
     pull-request-branch-name:
       separator: /
@@ -56,7 +56,7 @@ updates:
       default-days: 7
     assignees:
       - davidsneighbour
-    target-branch: maintenance
+    target-branch: development
     open-pull-requests-limit: 999
     pull-request-branch-name:
       separator: /
