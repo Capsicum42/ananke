@@ -1,5 +1,24 @@
 # Changelog
 
+## [2.19.0](https://github.com/gohugo-ananke/ananke/compare/v2.18.0...v2.19.0) (2026-06-07)
+
+### Features
+
+* add edit-page shortcode for GitHub edit links ([#1028](https://github.com/gohugo-ananke/ananke/issues/1028)) ([688f358](https://github.com/gohugo-ananke/ananke/commit/688f3584ad4d3625cd001855c1f01448316252ba))
+
+### Bug Fixes
+
+* normalise GoHugo to Hugo ([45143b5](https://github.com/gohugo-ananke/ananke/commit/45143b564b99709c2c23664de0bbcb7b1d30b17e))
+* various changes to workspace, testing, linting, etc. ([c43eae2](https://github.com/gohugo-ananke/ananke/commit/c43eae25528e08a19e9bf4af4d5753ab814a1179))
+
+### Build
+
+* **vscode:** update workspace configuration ([9e1d7b9](https://github.com/gohugo-ananke/ananke/commit/9e1d7b96a2998887d174adf592b7f98adc4af14b))
+
+### Documentation
+
+* **ai:** add release notes prompt ([606eaac](https://github.com/gohugo-ananke/ananke/commit/606eaacd6cef65903078ab9b9f4550db53da96c0))
+
 ## [2.18.0](https://github.com/gohugo-ananke/ananke/compare/v2.17.1...v2.18.0) (2026-06-07)
 
 ### Features
