@@ -7,8 +7,9 @@
 		"redhat.vscode-yaml",
 		"streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries",
 		"budparr.language-hugo-vscode",
-		"casualjim.gotemplate",
+		"jinliming2.vscode-go-template",
+		"gohugoio.gotmplfmt",
 		"dunstontc.vscode-go-syntax",
-		"jinliming2.vscode-go-template"
+		"casualjim.gotemplate"
 	]
 }
