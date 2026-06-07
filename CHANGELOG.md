@@ -1,5 +1,46 @@
 # Changelog
 
+## [2.18.0](https://github.com/gohugo-ananke/ananke/compare/v2.17.1...v2.18.0) (2026-06-07)
+
+### Features
+
+* add layout hooks head/body-start/end, header/main/content/footer-before/after ([66247c8](https://github.com/gohugo-ananke/ananke/commit/66247c8cc7544c4d736deb83705b731d1a1d6687))
+* add layout hooks head/body-start/end, header/main/content/footer-before/after ([cc579e8](https://github.com/gohugo-ananke/ananke/commit/cc579e8ae36756d246eb4f6be1c69e38976f9cef))
+* add since shortcode for release badges ([#1018](https://github.com/gohugo-ananke/ananke/issues/1018)) ([fb71d10](https://github.com/gohugo-ananke/ananke/commit/fb71d100fe069244d1fcbe3f48c976ab7a0558e2))
+* add since shortcode for release badges ([#1018](https://github.com/gohugo-ananke/ananke/issues/1018)) ([ddfc42c](https://github.com/gohugo-ananke/ananke/commit/ddfc42c738d12303b442a6fd12e7cabc6eef614d))
+* copy-to-clipboard buttons for code blocks ([#986](https://github.com/gohugo-ananke/ananke/issues/986)) ([1d96734](https://github.com/gohugo-ananke/ananke/commit/1d9673468505eaad912ebb7b9b6d601ac2b5bf60)), closes [#985](https://github.com/gohugo-ananke/ananke/issues/985)
+* copy-to-clipboard buttons for code blocks ([#986](https://github.com/gohugo-ananke/ananke/issues/986)) ([8c3143a](https://github.com/gohugo-ananke/ananke/commit/8c3143a220e69752c9434b15309c75145b99b896)), closes [#985](https://github.com/gohugo-ananke/ananke/issues/985)
+* make section link above article title clickable and configurable ([d343f0b](https://github.com/gohugo-ananke/ananke/commit/d343f0b8575a02a872f4cfbde314da4d0b60b53c))
+* show categories on posts ([#973](https://github.com/gohugo-ananke/ananke/issues/973)) ([52ec6cd](https://github.com/gohugo-ananke/ananke/commit/52ec6cd4b85f0d861100c6ab78bc2f8d3f073675)), closes [#620](https://github.com/gohugo-ananke/ananke/issues/620) [gohugo-ananke/documentation#18](https://github.com/gohugo-ananke/documentation/issues/18)
+* show categories on posts ([#973](https://github.com/gohugo-ananke/ananke/issues/973)) ([c806c1c](https://github.com/gohugo-ananke/ananke/commit/c806c1cf1b8bc98068ffef9cfd551a73711dcdc1)), closes [#620](https://github.com/gohugo-ananke/ananke/issues/620) [gohugo-ananke/documentation#18](https://github.com/gohugo-ananke/documentation/issues/18)
+
+### Bug Fixes
+
+* allow images in list summary cards ([#971](https://github.com/gohugo-ananke/ananke/issues/971)) ([713bb6d](https://github.com/gohugo-ananke/ananke/commit/713bb6dd58f4e4bb1db3ca1b8e56e385016b06ea)), closes [gohugo-ananke/documentation#13](https://github.com/gohugo-ananke/documentation/issues/13)
+* allow images in list summary cards ([#971](https://github.com/gohugo-ananke/ananke/issues/971)) ([c88d2fc](https://github.com/gohugo-ananke/ananke/commit/c88d2fc98c6b84d847f06b5f1b644d6dadb2299a)), closes [gohugo-ananke/documentation#13](https://github.com/gohugo-ananke/documentation/issues/13)
+* font size definition for in-paragraph code ([502c676](https://github.com/gohugo-ananke/ananke/commit/502c676249dbc14011e965d84f91c8a8ee6d9701))
+* font size definition for in-paragraph code ([da07193](https://github.com/gohugo-ananke/ananke/commit/da071934f9c4fa85c9c8ef0102b3af6c2759a0c2))
+* generate responsive hero background images ([#970](https://github.com/gohugo-ananke/ananke/issues/970)) ([9570264](https://github.com/gohugo-ananke/ananke/commit/9570264992f1f4923255bd8522a99c5552595d65)), closes [#362](https://github.com/gohugo-ananke/ananke/issues/362) [gohugo-ananke/documentation#14](https://github.com/gohugo-ananke/documentation/issues/14) [#362](https://github.com/gohugo-ananke/ananke/issues/362)
+* generate responsive hero background images ([#970](https://github.com/gohugo-ananke/ananke/issues/970)) ([7abd905](https://github.com/gohugo-ananke/ananke/commit/7abd905913a476061ff6880f645c2ce2e1092278)), closes [#362](https://github.com/gohugo-ananke/ananke/issues/362) [gohugo-ananke/documentation#14](https://github.com/gohugo-ananke/documentation/issues/14) [#362](https://github.com/gohugo-ananke/ananke/issues/362) [#540](https://github.com/gohugo-ananke/ananke/issues/540)
+* make header height configurable ([#972](https://github.com/gohugo-ananke/ananke/issues/972)) ([634cc09](https://github.com/gohugo-ananke/ananke/commit/634cc090072fbc2f99eaef4a19639c016e3e245c)), closes [#504](https://github.com/gohugo-ananke/ananke/issues/504) [gohugo-ananke/documentation#20](https://github.com/gohugo-ananke/documentation/issues/20)
+* make header height configurable ([#972](https://github.com/gohugo-ananke/ananke/issues/972)) ([de31c71](https://github.com/gohugo-ananke/ananke/commit/de31c71c2a3b3235fec0783521d5104ff41ec566)), closes [#504](https://github.com/gohugo-ananke/ananke/issues/504) [gohugo-ananke/documentation#20](https://github.com/gohugo-ananke/documentation/issues/20)
+
+### Build
+
+* **deps:** update dependencies ([3395d1f](https://github.com/gohugo-ananke/ananke/commit/3395d1f354e9045ea21d36d6af21f18eba1a013e))
+* **fix:** proper discussion category for GH release ([2b51bf7](https://github.com/gohugo-ananke/ananke/commit/2b51bf775e658d8d10e7815ffa948612cdcb3e17))
+* **fix:** proper discussion category for GH release ([0a0bc21](https://github.com/gohugo-ananke/ananke/commit/0a0bc2107d420d1fe01dd5316f88c54c233c3c91))
+* **vscode:** update workspace configuration ([90a7775](https://github.com/gohugo-ananke/ananke/commit/90a7775039fce92f8ce83c4f6f870a128a49b7cc))
+
+### Documentation
+
+* **ai:** update issue prompt ([2eb476f](https://github.com/gohugo-ananke/ananke/commit/2eb476fd782d758ef42f90a83d96ffa3edc3f9f8))
+* **ai:** update issue prompt ([81f0cfe](https://github.com/gohugo-ananke/ananke/commit/81f0cfe2a3ae0fdf6b89673531ad5a6699661546))
+
+### Tests
+
+* scaffold Playwright + axe testing PoC ([#1004](https://github.com/gohugo-ananke/ananke/issues/1004)) ([2d2116e](https://github.com/gohugo-ananke/ananke/commit/2d2116e1143a2214b9f1469d56803f0b06977869))
+
 ## [2.17.1](https://github.com/gohugo-ananke/ananke/compare/v2.17.0...v2.17.1) (2026-06-06)
 
 ### Bug Fixes
