@@ -40,15 +40,15 @@ For details, see [Branch Strategy](#branch-strategy).
 1. Use a compatible Hugo version (see [`config/_default/module.toml`](https://github.com/gohugo-ananke/ananke/blob/main/config/_default/module.toml) for the current state).
 2. Install dependencies:
 
- ```bash
- npm install
- ```
+```bash
+npm install
+```
 
 1. Run a local preview via `npm run` instead of just calling `hugo server`:
 
- ```bash
- npm run server
- ```
+```bash
+npm run server
+```
 
  This runs the documentation site from `site/` using contents from `docs/` with local configuration.
 
@@ -56,9 +56,9 @@ For details, see [Branch Strategy](#branch-strategy).
 
 2. Make sure to install git hooks for linting and testing before you push changes:
 
- ```bash
- npm run prepare
- ```
+```bash
+npm run prepare
+```
 
  This command is run automatically after `npm install` but you can run it manually to set up hooks in an existing clone or update changed hooks. It uses `simple-git-hooks` to install a commit hook that runs `lint-staged` for markdown files, which in turn runs linting tasks on staged files.
 
@@ -74,7 +74,6 @@ For details, see [Branch Strategy](#branch-strategy).
 flowchart LR
  feature["feature/*, fix/*, docs/*, refactor/*"] --> development
  development --> main
- maintenance --> main
  main --> development
 ```
 
@@ -82,11 +81,10 @@ This repository uses a linear, rebase-based branch model. Long-lived branches MU
 
 ### Long-lived branches
 
-| Branch  | Purpose  | Release role | Write policy | Merge  |
+| Branch | Purpose | Release role | Write policy | Merge |
 | --- | --- | --- | --- | --- |
-| `main`  | Stable source of truth | releases | Protected. Only receives reviewed PRs from `staging` or `maintenance`. | Rebase |
+| `main` | Stable source of truth | releases | Protected. Only receives reviewed PRs from `development`. | Rebase |
 | `development` | Active development | pre-releases | Feature, fix, chore, and documentation PRs target this branch. | Squash |
-| `maintenance` | Dependency maintenance  | none | Maintainer-only branch for dependency version updates. | Rebase |
 
 ### Branch naming
 
@@ -97,8 +95,6 @@ Use short-lived branches for regular work:
 * `docs/<topic>`
 * `chore/<topic>`
 * `refactor/<topic>`
-
-Dependency update branches MUST target `maintenance` unless the change is part of an intentional feature branch and does not touch lock files.
 
 After a successful rebase between those branches, push with lease:
 
@@ -113,9 +109,9 @@ git push --force-with-lease
 3. Update docs for all user-facing changes.
 4. Run quality checks locally:
 
- ```bash
- npm run lint:markdown
- ```
+```bash
+npm run lint:markdown
+```
 
 1. If your change affects behaviour, validate with Hugo locally (for example `hugo` or `hugo server` in the relevant project).
 2. Open a pull request with:
